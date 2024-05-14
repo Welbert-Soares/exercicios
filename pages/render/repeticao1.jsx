@@ -1,27 +1,26 @@
 export default function Repeticao1() {
     const listaAprovados = [
-        'João',
-        'Maria',
-        'Ana',
-        'Bia',
-        'Carlos',
-        'Daniel',
-        'Laura'
-    ]
+        "João",
+        "Maria",
+        "Ana",
+        "Bia",
+        "Carlos",
+        "Daniel",
+        "Laura",
+    ];
 
     function renderizarLista() {
-        return (
-            <>
-                
-            </>
-        )
+        return listaAprovados.map((nome, i) => <li key={i}>{nome}</li>);
     }
 
-    return (
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-        </ul>
-    )
+    return <ul>{renderizarLista()}</ul>;
 }
+
+// function renderizarLista() {
+//     const itens = [];
+
+//     for (let i = 0; i < listaAprovados.length; i++) {
+//         itens.push(<li key={i}>{listaAprovados[i]}</li>);
+//     }
+//     return itens;
+// }
