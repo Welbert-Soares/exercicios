@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function mouse() {
+    //React Hooks
     const [x, setX] = useState(0); // usando array destructuring
    
     const arrayY = useState(0); // modo menos comum
